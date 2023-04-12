@@ -1,0 +1,116 @@
+
+:root{  
+    --text-color: #070f0e; 
+}
+
+
+body{
+    /* background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(244, 244, 241));
+} */
+
+background-color: #353839;
+}
+/* style when project is started */
+.started {
+    color: white;
+    font-weight: bold;
+    /* background-color: #088F8F; */
+    background-color: #05F8C8;
+    border-radius: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+ 
+/* style when project is completed */
+.completed {
+    color: white;
+    font-weight: bold;
+    background-color: #b22222;
+    border-radius: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.div-h1-container{
+    z-index: -4;
+    backdrop-filter: blur(15px);
+    border: transparent 1px solid;
+    padding: 50px;
+}
+
+.h1-container{
+    z-index: -2;
+    display: flexbox;
+    backdrop-filter: blur(15px);
+    border: solid transparent 2px;
+}
+
+
+.h1{   
+ backdrop-filter: blur(15px);
+ color:var(--text-color);
+}
+
+.orig_h2_title_green {
+    background-image: url(https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc8854311520e2e89ee0c51_path-5185_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px; /* adjust as needed */
+    padding-bottom: 15px;
+    padding-top:10px ; 
+    text-align: center;
+  }
+
+  .orig_h2_title_green-2{
+    background-image: url(https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc8854311520e2e89ee0c51_path-5185_2.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px; /* adjust as needed */
+    padding-bottom: 15px;
+    padding-top:10px ; 
+    text-align: right;
+    margin-left: 1300px;
+    max-width: fit-content;
+  }
+
+.all-t{
+    backdrop-filter: blur(15px);
+    font-size: 28px;
+    color: rgb(147, 147, 147);
+}
+
+.all-t:hover{
+    cursor: pointer;
+}
+
+.h1:hover{
+    cursor:wait;
+}
+
+.t-t-b{
+    color:black;
+}
+
+.all-t-container{
+    padding:0 50px 0 50px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #fff;
+    max-width: 1400px;
+}
+
+.a-tag{
+   color:#070f0e;
+}
+
+.dots:hover{
+    cursor: progress;
+}
+
+
+.bn2{
+    background-color: #05F8C8;
+    border-radius: 8px;
+}

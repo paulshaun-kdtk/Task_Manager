@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>Task Manager</title>
+</head>
+<body>
+   <p class="text-ce dots">...</p>
+    
+   
+    <!-- <div class="div-h1-container">
+        <div class="h1-container">
+           <h3 class="orig_h2_title_green" >Presents</h3>
+        </div>
+    </div> -->
+
+    <h1 class="orig_h2_title_green">
+        Task Manager</h1>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <form class="form-inline my-2 my-lg-3">
+                    <button type="button" class="btn mr-sm-2 bn2" data-toggle="modal" data-target="#addTaskModal">Add Task</button>
+                
+                </form>
+            </li>
+          </ul> 
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+     
+    <!-- button to add task 
+    <div class="row" style="margin-bottom: 50px;">
+        <div class="col-md-12">
+            
+        </div>
+    </div>
+ 
+</div> -->
+
+<!-- modal to add project and task -->
+<div class="modal fade" id="addTaskModal" tabindex="-1">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Add Task</h5>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+        </div>
+
+        <div class="modal-body">
+            <form method="POST" onsubmit="return taskObj.addTask(this);" id="form-task-hour-calculator">
+                 
+                <!-- select project from already created -->
+                <div class="form-group">
+                    <label>Project</label>
+                    <select name="project" id="add-task-project" class="form-control" required></select>
+                </div>
+
+                <!-- create new project -->
+                <div class="form-group">
+                    <label>New Project</label>
+                    <input type="text" name="new_project" id="add-project" class="form-control" placeholder="Project Name">
+
+                    <button type="button" onclick="taskObj.addProject();" class="btn btn-dark" style="margin-top: 10px;">Add Project</button>
+                </div>
+
+                <!-- enter task -->
+                <div class="form-group">
+                    <label>Task</label>
+                    <input type="text" name="task" class="form-control" placeholder="What are you going to do ?" required />
+                </div>
+            </form>
+        </div>
+
+        <!-- form submit button -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" form="form-task-hour-calculator" class="btn btn-dark">Add Task</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="all-t-container">
+    
+    <div class="text-center bg-transparent all-t">
+
+        <button type="button" class="btn btn-large mr-sm-2 btn-transparent" data-toggle="modal" data-target="#addTaskModal"> All Tasks</button>
+  
+    </div>
+  <br />
+  <br />
+
+  
+<!-- show all tasks -->
+
+<table class="table">
+        <tr>
+            <th class="t-t-b">Project</th>
+            <th class="t-t-b">Status</th>
+            <th class="t-t-b">Task</th>
+            <th class="t-t-b">Duration</th>
+            <th class="t-t-b">Date</th>
+            <th class="t-t-b">Action</th>
+        </tr>
+
+    <tbody id="all-tasks"></tbody>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="main.js">
+</script>
+
+<a class="a-tag" href="https://github.com/paulshaun-kdtk"><h6 class="orig_h2_title_green-2">
+    Shaun_kdtk</caption> </h6>
+</body>
+</html>
